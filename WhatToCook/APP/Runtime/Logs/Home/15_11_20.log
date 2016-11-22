@@ -1,0 +1,24 @@
+[ 2015-11-20T11:02:55+08:00 ] ::1 /WhatToCook/Home/Datapublish/createDataset.html
+ERR: 无法加载控制器:Datapublish
+
+[ 2015-11-20T11:28:24+08:00 ] ::1 /WhatToCook/Home/Datapublish/createDataset.html
+ERR: 无法加载控制器:Datapublish
+
+[ 2015-11-20T14:58:44+08:00 ] ::1 /WhatToCook/
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dataverify.type' doesn't exist
+
+[ 2015-11-20T14:59:38+08:00 ] ::1 /WhatToCook/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2015-11-20T15:26:26+08:00 ] ::1 /WhatToCook/Home/Datapublish/createDataset.html
+ERR: 无法加载控制器:Datapublish
+
+[ 2015-11-20T16:04:57+08:00 ] ::1 /WhatToCook/Home/Index/recipeDetail.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or material like  %%)  and  (flavour not like %% and material not like  %%)  ' at line 1
+
+[ 2015-11-20T17:11:30+08:00 ] 192.168.0.103 /WhatToCook/Home/Index/recipeDetail.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%鸡% or material like  %鸡%)  )' at line 1
+
+[ 2015-11-20T17:19:44+08:00 ] ::1 /WhatToCook/Home/Index/recipeDetail.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%鸡% or material like  %鸡%)  )' at line 1
+

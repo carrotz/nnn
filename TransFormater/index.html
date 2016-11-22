@@ -1,0 +1,243 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>对照文本格式化转换工具</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">对照文本格式化转换工具</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a>
+                    </li>
+                    <li><a href="#about">帮助</a>
+                    </li>
+                    <li><a href="#contact">关于</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="content">
+            <div class="col-md-12" id="btn_area">
+                <button type="button" class="btn btn-default btn_start" >开始转换</button>
+                <button type="button" class="btn btn-default btn_reset">还原默认设置</button>
+                <button type="button" class="btn btn-default btn_clean1">清空原文</button>
+                <button type="button" class="btn btn-default btn_clean2">清空结果</button>
+            </div>
+            <div class="col-md-6">
+                <h2># 原文</h2>
+                <div class="control">
+                    <div class="row" id="part1_type">
+                        <div class="col-md-2 control_title">分隔方式：</div>
+                        <div class="col-md-10">
+                            <label class="radio-inline">
+                              <input type="radio" name="stRadioOptions" id="stRadio1" value="1" checked> 行
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="stRadioOptions" id="stRadio2" value="2"> 段
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="stRadioOptions" id="stRadio3" value="3"> 全文
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="stRadioOptions" id="stRadio4" value="4"> 一行内</label>
+                        </div>
+                    </div>
+                    <div class="row" id="part1_type2">
+                        <div class="col-md-2 control_title">段间空行：</div>
+                        <div class="col-md-4">
+                            <select id="space_par" class="form-control split_mark">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="row" id="part1_type3">
+                        <div class="col-md-2 control_title">分割标识：</div>
+                        <div class="col-md-10">
+                            <input id="st_split" type="text" class="form-control split_mark" >
+                            </div>
+                    </div>
+                    
+                    <div class="row" id="part1_del">
+                        <div class="col-md-2 control_title">去除字符：</div>
+                        <div class="col-md-10">
+                            <input id="del_front_1"  type="text" class="form-control split_mark" placeholder="文字1开头">
+                            <input id="del_back_1" type="text" class="form-control split_mark" placeholder="文字1结尾">
+                            <input id="del_front_2"  type="text" class="form-control split_mark" placeholder="文字2开头">
+                            <input id="del_back_2" type="text" class="form-control split_mark" placeholder="文字2结尾">
+                        </div>
+                    </div>
+
+                </div>
+                
+                
+                <textarea id="text1" class="form-control" rows="20">僕らなら
+若是我们
+
+空からこぼれてくる
+【从天空中洒落】
+とても小さくて消えそうなモノ
+【非常小巧的看上去要消失的东西】
+静かに積み重なって
+【静静的堆积起来】
+想いを描いていく
+【描绘着思念】
+一粒一粒溶けないで
+【一粒一粒没有融化】
+ 
+uh　　今日は言えるかな
+【uh  今天可以说吗】
+uh　　このまま帰らないで　　二人で
+【uh  两个人 就这样不回去】
+ 
+初めて出逢った時には
+【初次相逢的时候】
+もう産まれていた輝く結晶
+【已经产生了光辉的结晶】
+あれから大きく育って
+【从那长大】
+今夜僕らに降る
+【今晚我们落下】
+一粒一粒溶けないで
+【一粒一粒没有融化】
+ 
+uh　　今日は言えるかな
+【uh  今天可以说吗】
+uh　　このまま
+【uh  就这样】
+かじかむ心
+【冻僵的心】
+君の笑顔で温まっていく
+【以你的笑容温暖】
+小さな右手
+【小小的右手】
+ただ引き寄せて足を止めた
+【只是停止了拉近的脚步】
+ 
+uh　　今日は伝えるよ
+【uh  今天传达了啊】
+uh　　このまま帰らないで　　二人で
+【uh  两个人 就这样不回去】
+ 
+uh　　君に伝えるよ
+【uh  向你传达了啊】
+uh　　このまま帰らないで　　二人だけで
+【uh  只有两个人 就这样不回去】
+ 
+この想い
+【这份思念】
+溶けないで、届け
+【没有融化的传达】
+</textarea>
+            </div>
+            <div class="col-md-6">
+            <h2># 结果</h2>
+            
+                <div class="control">
+                    <div class="row" id="part2_type">
+                        <div class="col-md-2 control_title">分隔方式：</div>
+                        <div class="col-md-10">
+                            <label class="radio-inline">
+                              <input type="radio" name="edRadioOptions" id="edRadio1" value="1" checked> 行
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="edRadioOptions" id="edRadio2" value="2"> 段
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="edRadioOptions" id="edRadio3" value="3"> 全文
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="edRadioOptions" id="edRadio4" value="4"> 一行内</label>
+                    </div>
+                    <div class="row" id="part2_type2">
+                        <div class="col-md-2 control_title">段间空行：</div>
+                        <div class="col-md-4">
+                            <select  id="ed_space_par" class="form-control split_mark">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-2 control_title">行间空行：</div>
+                        <div class="col-md-4">
+                            <select id="ed_space_line" class="form-control split_mark">
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" id="part2_type3">
+                        <div class="col-md-2 control_title">分割标识：</div>
+                        <div class="col-md-10"><input  id="ed_split_mark" type="text" class="form-control split_mark" placeholder="默认为空"></div>
+                    </div>
+                    <p id="part2_type4" class="display_off">分割标识：<input  type="text" class="form-control split_mark" placeholder="开始（必填）">&nbsp;<input type="text" class="form-control split_mark" placeholder="结束（可以为空）"></p>
+                    <div class="row" id="part2_del">
+                        <div class="col-md-2 control_title">添加字符：</div>
+                        <div class="col-md-10">
+                            <input id="add_front_1"  type="text" class="form-control split_mark" placeholder="文字1开头">
+                            <input id="add_back_1" type="text" class="form-control split_mark" placeholder="文字1结尾">
+                            <input id="add_front_2" type="text" class="form-control split_mark" placeholder="文字2开头">
+                            <input id="add_back_2" type="text" class="form-control split_mark" placeholder="文字2结尾">
+                        </div>
+                    </div>
+
+                </div>
+            
+            
+            </div>
+            
+            <textarea id="text2"  class="form-control" rows="20">
+</textarea>
+        </div>
+        
+        <div class="col-md-12" id="btn_area_down">
+                <button type="button" class="btn btn-default btn_start" >开始转换</button>
+                <button type="button" class="btn btn-default btn_reset">还原默认设置</button>
+                <button type="button" class="btn btn-default btn_clean1">清空原文</button>
+                <button type="button" class="btn btn-default btn_clean2">清空结果</button>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</body>
+
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fun.js"></script>
+</html>

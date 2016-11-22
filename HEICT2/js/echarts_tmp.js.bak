@@ -1,0 +1,176 @@
+var option0 = {
+        title : {
+            text: '2011全国GDP',
+            subtext: '数据来自国家统计局',
+            x:'right',
+            y: 'top'
+        },
+        tooltip : {
+            trigger: 'item'
+        },
+        dataRange: {
+            min: 55,
+            max: 85,
+            orient: 'horizontal',
+            color: ['#4a8c1c','#cac533','#df4e34'],
+            text:['85','55'],           // 文本，默认为数值文本
+            x: 'center',
+            y: 'bottom',
+            textStyle: {
+                color: 'orange'
+            },
+			splitNumber:6,
+        },
+        toolbox: {
+            show : true,
+            //orient : 'vertical',
+            x: 'left',
+            y: 'top',
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        /*grid:{
+            x: 50,
+            x2: 200,
+            y2: 10,
+            borderWidth:0
+        },*/
+        xAxis : [
+            {
+                min:50,
+				max:85,
+				type : 'value',
+                position: 'top',
+                name: '（亿元）',
+                splitLine: {show:false}
+            }
+        ],
+        yAxis : [
+            {
+                type : 'category',
+                splitLine: {show:false},
+                axisLabel: {
+                    interval:0
+                },
+                data : ['北京',	'天津',	'河北','山西','内蒙古','辽宁','吉林','黑龙江','上海','江苏','浙江','安徽','福建','江西','山东','河南','湖北','湖南','广东','广西','海南','重庆','四川','贵州','云南','西藏','陕西','甘肃','青海','宁夏','新疆']
+            }
+        ],
+        series : [
+            {
+                name: '2011全国GDP',
+                type: 'map',
+                mapType: 'china',
+                itemSdtyle:{
+                    normal:{label:{show:true}}
+                },
+                mapLocation: {
+                    x: 'right',
+                    y: 80
+                },
+                data:[
+                    {name: '北京',value: 74.33},
+					{name: '天津',value: 73.31},
+					{name: '河北',value: 70.68},
+					{name: '山西',value: 69.96},
+					{name: '内蒙古',value: 68.29},
+					{name: '辽宁',value: 71.51},
+					{name: '吉林',value: 71.38},
+					{name: '黑龙江',value: 70.39},
+					{name: '上海',value: 76.22},
+					{name: '江苏',value: 71.69},
+					{name: '浙江',value: 72.50},
+					{name: '安徽',value: 70.18},
+					{name: '福建',value: 70.30},
+					{name: '江西',value: 68.37},
+					{name: '山东',value: 71.70},
+					{name: '河南',value: 69.67},
+					{name: '湖北',value: 69.31},
+					{name: '湖南',value: 69.05},
+					{name: '广东',value: 70.79},
+					{name: '广西',value: 69.07},
+					{name: '海南',value: 70.66},
+					{name: '重庆',value: 69.84},
+					{name: '四川',value: 69.25},
+					{name: '贵州',value: 64.54},
+					{name: '云南',value: 64.24},
+					{name: '西藏',value: 62.52},
+					{name: '陕西',value: 68.92},
+					{name: '甘肃',value: 66.77},
+					{name: '青海',value: 64.55},
+					{name: '宁夏',value: 68.71},
+					{name: '新疆',value: 65.98}
+                ]
+            },
+            {
+                type: 'bar',
+				itemStyle : {
+					barBorderColor : '#fff',
+                    normal : {
+						color : (function (){
+                            var zrColor = zrender.tool.color;//require('zrender/tool/color');
+                            return zrColor.getLinearGradient(
+                                0, 80, 0, 500,
+                                [[1, '#4a8c1c'],[0.2, '#cac533'],[0,'#df4e34']]
+                            )
+                        })(),
+                        label : {
+                            show : false
+                        }
+                    },
+                    emphasis : {
+						//color: ['green','yellow','red'],
+                        
+						label : {
+                            show : true,
+                            textStyle : {
+                                color : 'orange',
+                                fontWeight : 'bold'
+                            }
+                        }
+                    }
+					
+                },
+                data:[
+                    {name: '北京',value: 74.33},
+					{name: '天津',value: 73.31},
+					{name: '河北',value: 70.68},
+					{name: '山西',value: 69.96},
+					{name: '内蒙古',value: 68.29},
+					{name: '辽宁',value: 71.51},
+					{name: '吉林',value: 71.38},
+					{name: '黑龙江',value: 70.39},
+					{name: '上海',value: 76.22},
+					{name: '江苏',value: 71.69},
+					{name: '浙江',value: 72.50},
+					{name: '安徽',value: 70.18},
+					{name: '福建',value: 70.30},
+					{name: '江西',value: 68.37},
+					{name: '山东',value: 71.70},
+					{name: '河南',value: 69.67},
+					{name: '湖北',value: 69.31},
+					{name: '湖南',value: 69.05},
+					{name: '广东',value: 70.79},
+					{name: '广西',value: 69.07},
+					{name: '海南',value: 70.66},
+					{name: '重庆',value: 69.84},
+					{name: '四川',value: 69.25},
+					{name: '贵州',value: 64.54},
+					{name: '云南',value: 64.24},
+					{name: '西藏',value: 62.52},
+					{name: '陕西',value: 68.92},
+					{name: '甘肃',value: 66.77},
+					{name: '青海',value: 64.55},
+					{name: '宁夏',value: 68.71},
+					{name: '新疆',value: 65.98}
+                ]
+            }
+        ]
+}
+
+// 为echarts对象加载数据 
+var myChart_tmp = echarts.init(document.getElementById('index_piture'));
+myChart_tmp.setOption(option0); 

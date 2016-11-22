@@ -1,0 +1,31 @@
+body {
+    padding-top: 50px;
+    font-family: "Microsoft YaHei" ! important; 
+	background: #E9E9E9 url(../../images/bg.png) 50% 0;
+}
+#content{
+    background: rgba(182, 221, 242, 0.77);
+    padding: 20px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-radius: 20px;
+}
+#content2{
+    background: rgba(182, 221, 242, 0.77);
+    padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+#btn_area{
+    text-align: center;
+}
+input{
+	border-radius: 4px;
+}
+input[readonly] {
+	background: #FFF!important;
+}
+.recipe_info{
+	padding: 5px;
+}

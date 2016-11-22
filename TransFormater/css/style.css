@@ -1,0 +1,63 @@
+body {
+    padding-top: 50px;
+    font-family: "Microsoft YaHei" ! important; 
+}
+nav{
+    font-weight: bold;
+}
+#content{
+    background: #f2f2f2;
+    padding: 20px;
+}
+#btn_area{
+    text-align: center;
+}
+textarea {
+    resize: none;
+}
+.double{
+}
+.row .row{
+    margin: 5px;
+}
+.display_off{
+    display: none;
+}
+.control{
+    background: #dbe6e8;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 34px;
+}
+.split_mark{
+    display: inline;
+    width: auto;
+}
+#part2_split_mark{
+    display: inline;
+    width: auto;
+}
+#part1_del{
+    padding: 0;
+}
+.control_title{
+    padding: 0;
+}
+p{
+    line-height: 35px;
+    margin: 0;
+}
+.btn{
+    margin: 5px;
+}
+#btn_area_down{
+    margin: 10px;
+    text-align: center;
+}
+input{
+    margin: 5px;
+}
+select{
+    margin: 5px;
+}

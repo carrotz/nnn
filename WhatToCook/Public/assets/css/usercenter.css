@@ -1,0 +1,177 @@
+#chart_main{
+    
+}
+#center-left{
+	width:200px;
+	float: left;
+}
+/*面包屑*/
+#breadcrumbs{
+    width: 960px;
+    min-height: 18px;
+    border:none;
+    background: none;
+}
+.main-content{
+    width: 960px;
+    min-height: 650px;
+    margin: 0 auto;
+}
+#profile-picture{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+}
+#profile-picture img{
+    width: 120px;
+    height: 120px;
+}
+
+.sidebar{
+    width: 200px;
+    float: none;
+}
+.sidebar:before{
+    background: none;
+    border:none;
+}
+.sidebar li{
+    text-align: center;
+}
+.sidebar li a{
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+}
+.sidebar li a:hover{
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+}
+.sidebar li.active a{
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+}
+.sidebar li.active a:after{
+    border:none;
+}
+.sidebar li.active a:hover{
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+}
+.nav-list{
+    border: 1px solid #ccc;
+}
+
+#center-right{
+    width:740px;
+    min-height: 600px;
+    /*		background: red;*/
+    float: right;
+    margin-top: 24px;
+    /*margin-right: 20px;*/
+}
+.usermessage{
+    width: 740px;
+    margin-top: 16px;
+}
+input.col-sm-5{
+    width: 200px;
+}
+input.col-sm-3{
+	width: 162px;
+}
+.profile-user-info{
+    margin: 0 auto;
+    font-size: 15px;
+    width:600px;
+
+    border: none;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+.profile-info-row{
+   margin-top:20px; 
+   height: 25px;
+}
+.profile-info-name{
+    background: none!important;
+    border: none!important;
+}
+.profile-info-value{
+    border: none!important;
+}
+.btn-userinfo{
+	margin-top: 35px;
+}
+div.usercenter input{
+	border-left:0px;border-top:0px;border-right:0px;border-bottom:1px;width:200px;
+}
+input.btn-modsave{
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    width: 200px;
+    margin-left: -6px;
+}
+input.modipass{
+	border: 1px solid #d5d5d5!important;
+}
+input.mes-input{
+	padding-left: 12px;
+}
+.page-content{
+	padding:0!important;
+	margin-top: 15px;
+}
+#id-message-list-navbar{
+	line-height:12px;
+	padding: 6px;
+}
+.message-bar{
+	display: block;
+}
+span.message-topic{
+	font-weight: bold;
+    font-size: 110%;
+}
+.time{
+	width: 135px!important;
+}
+.mes-table{
+	margin-top: 15px;
+}
+.msg{
+	width:12%;
+}
+.msg-content{
+	width: 75%
+}
+.sender{
+	cursor: default!important;
+}
+.icon-user{
+    font-size: 20px;
+}
+#space{
+    width: 714px;
+}
+div.space_gauge{
+    margin:0 auto;
+    width: 400px;
+    text-align: center;
+}
+.space_gauge button{
+    margin-top: -90px;
+}
+#space_main{
+    width: 400px;
+    height:400px;
+}
+div.description{
+    
+}
+        
+
+       

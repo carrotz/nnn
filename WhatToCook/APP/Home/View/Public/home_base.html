@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   	<block name="title"><title>做啥吃</title></block>
+    <!-- basic styles -->
+	<link href="__PUBLIC__/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/font-awesome.min.css" />
+
+	<!--[if IE 7]>
+	  <link rel="stylesheet" href="__PUBLIC__/assets/css/font-awesome-ie7.min.css" />
+	<![endif]-->
+
+	<!-- page specific plugin styles -->
+	<block name="page-specific-plugin">
+
+	</block>
+
+	<!-- fonts -->
+
+	<!-- ace styles -->
+
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/ace.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/ace-rtl.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/ace-skins.min.css" />
+
+	<!-- admin styles -->
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/home.css" />
+
+	<!--[if lte IE 8]>
+	  <link rel="stylesheet" href="__PUBLIC__/assets/css/ace-ie.min.css" />
+	<![endif]-->
+
+	<!-- inline styles related to this page -->
+
+	<!-- ace settings handler -->
+
+	<script src="__PUBLIC__/assets/js/ace-extra.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 eleme<extend name="Public:home_base" />nts and media queries -->
+
+	<!--[if lt IE 9]>
+	<script src="__PUBLIC__/assets/js/html5shiv.js"></script>
+	<script src="__PUBLIC__/assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+        
+                <div class="navbar-header pull-left">
+					<a href="{:U('Home/Index/index')}" class="navbar-brand">
+						<small>
+							<i class="icon-food"></i>
+							做啥吃 - 为选择恐惧症厨艺爱好者解决心头大患
+						</small>
+					</a><!-- /.brand -->
+				</div><!-- /.navbar-header -->
+                
+            </div>
+            
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <block name="container">
+		</block>
+    </div>
+    <!-- /.container -->
+
+	<!-- basic scripts -->
+		
+		<script type="text/javascript">
+       
+        </script>
+
+		<!--[if !IE]> -->
+
+		<script src="__PUBLIC__/assets/js/jquery-2.0.3.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+
+<![endif]-->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='__PUBLIC__/assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='__PUBLIC__/assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+</script>
+<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='__PUBLIC__/assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+		</script>
+		<script src="__PUBLIC__/assets/js/bootstrap.min.js"></script>
+		<script src="__PUBLIC__/assets/js/typeahead-bs2.min.js"></script>
+        <!-- page specific plugin scripts -->
+        <block name="page-specific-scripts">
+		
+        </block>
+
+		<!--[if lte IE 8]>
+		  <script src="__PUBLIC__/assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+		
+		<!-- ace scripts -->
+
+		<script src="__PUBLIC__/assets/js/ace-elements.min.js"></script>
+		<script src="__PUBLIC__/assets/js/ace.min.js"></script>
+
+        <!-- inline scripts related to this page -->
+		<block name="inline-scripts">
+
+		<script type="text/javascript">
+			
+        </script></block>
+
+</body>
+
+</html>

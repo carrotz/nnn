@@ -1,0 +1,378 @@
+body{
+	background-color:#f2fafd;
+}
+/*头部*/
+#header{
+	height:150px;
+	background:#5fb4e5;
+	overflow:hidden;
+}
+#logo{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+	width:620px;
+	height:100px;
+	background:url(../images/logo_03.png);
+}
+/*导航*/
+#nav{
+	background:#8dc7e9;
+	height:50px;
+	margin-top:5px;
+}
+#nav ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #000;
+	font-weight: bold;	
+}
+#nav ul li{
+	display: inline;	
+	margin: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.nav_current{
+	height:50px;
+	background:#09C;
+}
+
+
+/*内容*/
+#content{
+	/*height:1000px;*/
+	margin-top:5px;
+	margin-bottom:5px;
+	background:#FFF;
+}
+
+/*首页*/
+#introduce{
+	margin:10px 20px 10px 20px;
+	padding:10px;
+	font-size:16px;
+	font-weight:bold;
+	line-height:30px;
+	border:#069 double;
+}
+#index_map{
+	margin:20px 20px 20px 20px;
+	font-size:18px;
+	font-weight:bold;
+	line-height:30px;
+	text-align:center;
+}
+#map_chart{
+	width:900px;
+	height:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#bar_chart{
+	width:900px;
+	height:400px;
+	padding-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*指标测算*/
+#cal_content{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#nav_left{
+	height:880px;
+	background:#92c0ea;
+}
+#nav_left ul{
+	margin:0;
+	padding-top:80px;
+	text-align:center;
+}
+#nav_left ul li{
+	margin-left:0;
+	/*margin-top:80px;*/
+	list-style-type:none;
+}
+.nav_left_current{
+	height:80px;
+	background:#09C;
+}
+#cal_content textarea{
+	font-size:16px;
+	line-height:30px;
+}
+/*人群概况*/
+#right_1{
+	height:880px;
+	background-color:#FFF;
+}
+#right_1 table{
+	margin-top:30px;
+	margin-left:50px;
+	line-height:70px;
+	font-size:16px;
+}
+#right_1 p{
+	margin-left:40px;
+	margin-right:40px;
+	margin-top:10px;
+	padding:10px;
+	font-size:16px;
+	border:#069 double;
+}
+#right_1 table input{
+	font-size:16px;
+}
+
+
+/*人口数据*/
+#right_2{
+	height:880px;
+	background-color:#FFF;
+}
+#right_2 table{
+	width:630px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:30px;
+	font-size:16px;
+	text-align:center;
+}
+#right_2 table th{
+	width:150px;
+	font-weight:bold;
+	text-align:center;
+	border:1px #999999 dashed;
+}
+#right_2 table td{
+	width:150px;
+	text-align:center;
+	border:1px #999999 dashed;
+}
+#right_2 p{
+	margin-left:40px;
+	margin-right:40px;
+	margin-top:10px;
+	padding:10px;
+	font-size:16px;
+	border:#069 double;
+}
+
+/*死亡数据*/
+#right_3{
+	height:880px;
+	background-color:#FFF;
+}
+#right_3 table{
+	width:630px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:30px;
+	font-size:16px;
+	text-align:center;
+}
+#right_3 table th{
+	width:150px;
+	font-weight:bold;
+	text-align:center;
+	border:1px #999999 dashed;
+}
+#right_3 table td{
+	width:150px;
+	text-align:center;
+	border:1px #999999 dashed;
+}
+#right_3 p{
+	margin-left:40px;
+	margin-right:40px;
+	margin-top:10px;
+	padding:10px;
+	font-size:16px;
+	border:#069 double;
+}
+
+/*人群健康状况数据*/
+#right_4{
+	height:880px;
+	background-color:#FFF;
+}
+#right_4 table{
+	width:630px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:30px;
+	font-size:16px;
+	text-align:center;
+}
+#right_4 table th{
+	width:150px;
+	font-weight:bold;
+	text-align:center;
+	border:1px #999999 dashed;
+}
+#right_4 table td{
+	width:150px;
+	text-align:center;
+	border:1px #999999 dashed;
+}
+#right_4 p{
+	margin-left:40px;
+	margin-right:40px;
+	margin-top:10px;
+	padding:10px;
+	font-size:16px;
+	border:#069 double;
+}
+#HD_type{
+	color:#008000;
+}
+
+.btn_cls{
+	text-align:center;
+}
+.btn_cls input{
+	/*width: 150px;
+	height:50px;*/
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	border: 3px solid #357ebd;
+	cursor: pointer;
+	background-color: #3781C4;
+}
+
+/*指标测算结果*/
+#right_5{
+	height:880px;
+	background-color:#FFF;
+}
+#right_5 table{
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:30px;
+	font-size:16px;
+	text-align:center;
+}
+#right_5 table th{
+	font-weight:bold;
+	font-size:14px;
+	text-align:center;
+	border:1px #999999 dashed;
+}
+#right_5 table td{
+	width:65px;
+	text-align:center;
+	border:1px #999999 dashed;
+}
+#right_5 p{
+	margin-left:40px;
+	margin-right:40px;
+	margin-top:10px;
+	padding:10px;
+	font-size:16px;
+	border:#069 double;
+}
+#res_info{
+	color:#008000;
+}
+
+/*学术趋势*/
+.frame_in{
+	width:900px;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.frame_in iframe{
+	width:900px;
+	height:500px;
+}
+#btn{
+	display:block;
+	overflow:hidden;
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+.btn_st{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 50px;
+	width: 100px;
+	height: 50px;
+	float: left;
+	margin-right: 50px;
+	margin-left: 50px;
+	background-color: #CCC;
+	text-decoration:none;
+	color:#FFF;
+}
+.btn_cur{
+	background:#39C;
+}
+
+/*关于页面*/
+#about_introduce{
+	margin:20px;
+	font-size:16px;
+	line-height:30px;
+}
+
+
+
+
+/*文字样式*/
+a{
+	text-decoration: none;
+	color: #09C;
+}
+a:hover {
+	color: #0099FF;
+}
+p{
+	margin-bottom:0;
+}
+.text_right{
+	text-align:right;
+}
+.text_center{
+	text-align:center;
+}
+.text_bold{
+	font-weight:bold;
+}
+.text_font18{
+	font-size:18px;
+}
+h2{
+	text-align:center;
+	margin:10px;
+}
+h4{
+	text-align:center;
+	font-size:16px;
+	margin:5px;
+}
+
+/*页脚*/
+#footer{
+	height:60px;
+	background:#5fb4e5;
+}

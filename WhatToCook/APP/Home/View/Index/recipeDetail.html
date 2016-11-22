@@ -1,0 +1,132 @@
+<extend name="Public:home_base" />
+
+<block name="page-specific-plugin">
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/datepicker.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/select2.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/bootstrap-tagsinput.css" />
+</block>
+
+
+
+<block name="container"><div class="row">
+	<div class="col-md-12" id="content2">
+	<form class="form-horizontal">
+        <if condition="$found eq 1">
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="recipe_name">分类：</label>
+                <div class="col-xs-12 col-sm-9">
+                    <div class="clearfix">
+                        <div class="recipe_info">
+                            {$class1} &gt;&gt; {$class2}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="recipe_name">菜谱名称：</label>
+                <div class="col-xs-12 col-sm-9">
+                    <div class="clearfix">
+                        <div id="recipe_name" class="recipe_info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="feature">特性：</label>
+                <div class="col-xs-12 col-sm-9">
+                    <div class="clearfix">
+                        <div id="feature" class="recipe_info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="material">原料：</label>
+                <div class="col-xs-12 col-sm-9">
+                    <div class="clearfix">
+                        <div id="material" class="recipe_info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="flavour">调料：</label>
+                <div class="col-xs-12 col-sm-9">
+                    <div class="clearfix">
+                        <div id="flavour" class="recipe_info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="recipe">做法：</label>
+                <div class="col-xs-12 col-sm-9">
+                    <div class="clearfix">
+                        <div id="recipe" class="recipe_info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="hit">提示：</label>
+                <div class="col-xs-12 col-sm-9">
+                    <div class="clearfix">
+                        <div id="hit" class="recipe_info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="hit">更多做法：</label>
+                <div class="col-xs-12 col-sm-9">
+                    <div class="clearfix">
+                        <div class="recipe_info">
+                            <a href="http://www.douguo.com/search/recipe/{$recipe_name}" target="_blank">豆果</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="http://www.xiachufang.com/search/?keyword={$recipe_name}" target="_blank">下厨房</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="http://www.haodou.com/search/recipe/{$recipe_name}" target="_blank">好豆</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="http://so.meishi.cc/?q={$recipe_name}" target="_blank">美食杰</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+		<else/>
+           <h3>哎呀，条件太苛刻没找到合适的菜</h3>
+        </if>
+		
+
+		
+		<div class="col-md-12" id="btn_area">
+			<input type="button" id="back" class="btn btn-info"  value="返回">
+		</div>
+
+	</form>
+	</div>
+</div></block>
+
+
+<block name="page-specific-scripts">
+	<script>
+        var found = {$found};
+        if(found == 1){
+            var sel = {$sel};
+            $('#recipe_name').html(sel['recipe_name']);
+            $('#feature').html(sel['feature']);
+            $('#material').html(sel['material']);
+            $('#flavour').html(sel['flavour']);
+            $('#recipe').html(sel['recipe']);
+            $('#hit').html(sel['hit']);
+        }
+		$('#back').click(function(){
+			location.href = "{:U('Home/Index/index')}";
+		})
+	</script>
+</block>
