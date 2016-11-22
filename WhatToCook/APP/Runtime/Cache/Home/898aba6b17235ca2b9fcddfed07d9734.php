@@ -7,47 +7,47 @@
 
    	<title>做啥吃</title>
     <!-- basic styles -->
-	<link href="/WhatToCook/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="/WhatToCook/Public/assets/css/font-awesome.min.css" />
+	<link href="/whattocook/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/whattocook/Public/assets/css/font-awesome.min.css" />
 
 	<!--[if IE 7]>
-	  <link rel="stylesheet" href="/WhatToCook/Public/assets/css/font-awesome-ie7.min.css" />
+	  <link rel="stylesheet" href="/whattocook/Public/assets/css/font-awesome-ie7.min.css" />
 	<![endif]-->
 
 	<!-- page specific plugin styles -->
 	
-    <link rel="stylesheet" href="/WhatToCook/Public/assets/css/jquery-ui-1.10.3.custom.min.css" />
-    <link rel="stylesheet" href="/WhatToCook/Public/assets/css/datepicker.css" />
-    <link rel="stylesheet" href="/WhatToCook/Public/assets/css/select2.css" />
-    <link rel="stylesheet" href="/WhatToCook/Public/assets/css/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" href="/whattocook/Public/assets/css/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" href="/whattocook/Public/assets/css/datepicker.css" />
+    <link rel="stylesheet" href="/whattocook/Public/assets/css/select2.css" />
+    <link rel="stylesheet" href="/whattocook/Public/assets/css/bootstrap-tagsinput.css" />
 
 
 	<!-- fonts -->
 
 	<!-- ace styles -->
 
-	<link rel="stylesheet" href="/WhatToCook/Public/assets/css/ace.min.css" />
-	<link rel="stylesheet" href="/WhatToCook/Public/assets/css/ace-rtl.min.css" />
-	<link rel="stylesheet" href="/WhatToCook/Public/assets/css/ace-skins.min.css" />
+	<link rel="stylesheet" href="/whattocook/Public/assets/css/ace.min.css" />
+	<link rel="stylesheet" href="/whattocook/Public/assets/css/ace-rtl.min.css" />
+	<link rel="stylesheet" href="/whattocook/Public/assets/css/ace-skins.min.css" />
 
 	<!-- admin styles -->
-	<link rel="stylesheet" href="/WhatToCook/Public/assets/css/home.css" />
+	<link rel="stylesheet" href="/whattocook/Public/assets/css/home.css" />
 
 	<!--[if lte IE 8]>
-	  <link rel="stylesheet" href="/WhatToCook/Public/assets/css/ace-ie.min.css" />
+	  <link rel="stylesheet" href="/whattocook/Public/assets/css/ace-ie.min.css" />
 	<![endif]-->
 
 	<!-- inline styles related to this page -->
 
 	<!-- ace settings handler -->
 
-	<script src="/WhatToCook/Public/assets/js/ace-extra.min.js"></script>
+	<script src="/whattocook/Public/assets/js/ace-extra.min.js"></script>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 eleme<extend name="Public:home_base" />nts and media queries -->
 
 	<!--[if lt IE 9]>
-	<script src="/WhatToCook/Public/assets/js/html5shiv.js"></script>
-	<script src="/WhatToCook/Public/assets/js/respond.min.js"></script>
+	<script src="/whattocook/Public/assets/js/html5shiv.js"></script>
+	<script src="/whattocook/Public/assets/js/respond.min.js"></script>
 	<![endif]-->
 </head>
 
@@ -184,7 +184,7 @@
 
 		<!--[if !IE]> -->
 
-		<script src="/WhatToCook/Public/assets/js/jquery-2.0.3.min.js"></script>
+		<script src="/whattocook/Public/assets/js/jquery-2.0.3.min.js"></script>
 
 		<!-- <![endif]-->
 
@@ -195,22 +195,22 @@
 		<!--[if !IE]> -->
 
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='/WhatToCook/Public/assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+			window.jQuery || document.write("<script src='/whattocook/Public/assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
 		</script>
 
 		<!-- <![endif]-->
 
 		<!--[if IE]>
 <script type="text/javascript">
- window.jQuery || document.write("<script src='/WhatToCook/Public/assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+ window.jQuery || document.write("<script src='/whattocook/Public/assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
 </script>
 <![endif]-->
 
 		<script type="text/javascript">
-			if("ontouchend" in document) document.write("<script src='/WhatToCook/Public/assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+			if("ontouchend" in document) document.write("<script src='/whattocook/Public/assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
 		</script>
-		<script src="/WhatToCook/Public/assets/js/bootstrap.min.js"></script>
-		<script src="/WhatToCook/Public/assets/js/typeahead-bs2.min.js"></script>
+		<script src="/whattocook/Public/assets/js/bootstrap.min.js"></script>
+		<script src="/whattocook/Public/assets/js/typeahead-bs2.min.js"></script>
         <!-- page specific plugin scripts -->
         
 	<script>
@@ -231,14 +231,14 @@
 
 
 		<!--[if lte IE 8]>
-		  <script src="/WhatToCook/Public/assets/js/excanvas.min.js"></script>
+		  <script src="/whattocook/Public/assets/js/excanvas.min.js"></script>
 		<![endif]-->
 
 		
 		<!-- ace scripts -->
 
-		<script src="/WhatToCook/Public/assets/js/ace-elements.min.js"></script>
-		<script src="/WhatToCook/Public/assets/js/ace.min.js"></script>
+		<script src="/whattocook/Public/assets/js/ace-elements.min.js"></script>
+		<script src="/whattocook/Public/assets/js/ace.min.js"></script>
 
         <!-- inline scripts related to this page -->
 		

@@ -1,0 +1,35 @@
+[ 2016-11-22T21:17:47+08:00 ] ::1 /whattocook/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `recipe` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `type` WHERE ( fatherid = 0 )  [ RunTime:0.0097s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 44  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 45  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 46  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 47  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 48  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 49  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 50  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 51  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 52  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 424  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 427  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `type` WHERE `fatherid` = 435  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001527s ]
+

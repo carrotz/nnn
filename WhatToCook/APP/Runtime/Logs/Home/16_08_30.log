@@ -1,0 +1,9 @@
+[ 2016-08-30T10:49:03+08:00 ] ::1 /whattocook/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'whattocook'@'localhost' (using password: YES)
+
